@@ -18,3 +18,7 @@ app.route("/view").post((req,res)=>{
     res.end()
 
 })
+
+app.listen(process.env.PORT,()=>{
+    console.log(`listenning on port : ${process.env.PORT}`)
+})
